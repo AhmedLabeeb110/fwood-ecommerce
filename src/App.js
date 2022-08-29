@@ -1,12 +1,10 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+// Global Components
+import NavBar from "./components/NavBar" 
 
 function App() {
   return (
     <div className="App">
-      <p>Application Test</p>
+      <NavBar />
     </div>
   );
 }
