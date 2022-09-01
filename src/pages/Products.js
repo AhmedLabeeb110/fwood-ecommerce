@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 const Products = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("db.json")
+    fetch("http://localhost:3000/allproducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, [products]);
+  }, []);
 
-  return <div>{Products}</div>;
+  console.log(products);
+
+  return <div></div>;
 };
 
 export default Products;

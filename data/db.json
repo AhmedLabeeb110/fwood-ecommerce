@@ -1,0 +1,40 @@
+{
+  "allproducts": [
+    {
+      "name": "Fruit Soap",
+      "price": "£19",
+      "id": "1",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    },
+    {
+      "name": "Mango Lotion",
+      "price": "£13",
+      "id": "2",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    },
+    {
+      "name": "Cherry Shower Gel",
+      "price": "£23",
+      "id": "3",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    },
+    {
+      "name": "Face Wash",
+      "price": "£2",
+      "id": "4",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    },
+    {
+      "name": "Body Wash",
+      "price": "£71",
+      "id": "5",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    },
+    {
+      "name": "Car Liquid",
+      "price": "£17",
+      "id": "6",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rem magnam neque voluptates error illum."
+    }
+  ]
+}
