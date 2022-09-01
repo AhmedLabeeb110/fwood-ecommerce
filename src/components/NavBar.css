@@ -24,12 +24,13 @@
 }
 
 .navlinks li{
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   color: #B9B9B9;
+  border-bottom: 0px solid #000;
 }
 
 .navlinks li:hover{
-  border-bottom: 1px solid #000;
+  border-bottom: 1.2px solid #000;
 }
 
 .logo {

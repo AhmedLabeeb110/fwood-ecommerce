@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="heroSection">
+        <div className="title">Authentic Malay Healthcare</div>
         <div className="heading">
           The best solution for moisturizing the skin
         </div>
