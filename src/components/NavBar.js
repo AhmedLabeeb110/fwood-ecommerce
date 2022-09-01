@@ -20,7 +20,7 @@ const NavBar = () => {
             <NavLink to="/shop">SHOP</NavLink>
           </li>
           <li>
-            <NavLink to="products">PRODUCTS</NavLink>
+            <NavLink to="/products">PRODUCTS</NavLink>
           </li>
         </ul>
         <ul className="navicons">

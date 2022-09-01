@@ -27,8 +27,13 @@
   transition: all 0.2s ease-in;
 }
 
+#hero-btn button a{
+  color: #fff;
+}
+
 #hero-btn button:hover{
   background-color: #3B3754;
+  color: #fff;
 }
 
 .heroSection{

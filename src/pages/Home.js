@@ -1,4 +1,4 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
           Only included the most potential active waveo chocos
         </p>
         <div id="hero-btn">
-          <button>Buy Now</button>
+        <NavLink to="/products"><button>Buy Now</button></NavLink>
         </div>
       </div>
     </>
