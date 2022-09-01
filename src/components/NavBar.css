@@ -23,16 +23,6 @@
   color: #3B3754;
 }
 
-.navlinks li{
-  transition: all 0.3s ease-out;
-  color: #B9B9B9;
-  border-bottom: 0px solid #000;
-}
-
-.navlinks li:hover{
-  border-bottom: 1.2px solid #000;
-}
-
 .logo {
   font-size: 26px;
   color: #3B3754;
