@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Products = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/allproducts")
+    fetch("https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/db")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
