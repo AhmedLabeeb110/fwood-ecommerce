@@ -13,13 +13,13 @@ const Products = () => {
       {data &&
         data.map((allproduct) => (
           <div className="product-card" key={allproduct.id}>
-            <p className="sellingStatus">{allproduct.sellingStatus}</p>
+            <span className="sellingStatus">{allproduct.sellingStatus}</span>
             <img src={allproduct.image} alt="images" />
             <div className="productTitle">{allproduct.name}</div>
             <div className="productPrice">{allproduct.price}</div>
             <p className="productDescription">{allproduct.description}</p>
             <p className="stock">{allproduct.stock}</p>
-            <button className="seeDetails">See Details</button>
+            <button id="seeDetails">See Details</button>
           </div>
         ))}
     </div>
