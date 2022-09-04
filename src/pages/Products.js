@@ -9,7 +9,7 @@ const Products = () => {
   );
 
   return (
-    <div className="products product-thumbnail">
+    <div className="products">
       {data &&
         data.map((allproduct) => (
           <div className="product-card" key={allproduct.id}>
