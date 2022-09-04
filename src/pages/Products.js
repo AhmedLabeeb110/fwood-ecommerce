@@ -9,17 +9,21 @@ const Products = () => {
   );
 
   return (
-    <div className="product">
+    <div className="products product-thumbnail">
       {data &&
         data.map((allproduct) => (
           <div className="product-card" key={allproduct.id}>
-            <span className="sellingStatus">{allproduct.sellingStatus}</span>
+            {allproduct.sellingStatus && (
+              <span className="sellingStatus">{allproduct.sellingStatus}</span>
+            )}
             <img src={allproduct.image} alt="images" />
             <div className="productTitle">{allproduct.name}</div>
             <div className="productPrice">{allproduct.price}</div>
             <p className="productDescription">{allproduct.description}</p>
             <br />
-            <p className="stock">{allproduct.stock ? "in stock" : "out of stock"  } </p>
+            <p className="stock">
+              {allproduct.stock ? "in stock" : "out of stock"}
+            </p>
             <button id="seeDetails">See Details</button>
           </div>
         ))}
