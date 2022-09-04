@@ -79,3 +79,7 @@
 #seeDetails:hover {
   background-color: #3b3754;
 }
+
+.stock{
+    font-weight: 500;
+}

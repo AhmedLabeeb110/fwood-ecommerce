@@ -18,7 +18,8 @@ const Products = () => {
             <div className="productTitle">{allproduct.name}</div>
             <div className="productPrice">{allproduct.price}</div>
             <p className="productDescription">{allproduct.description}</p>
-            <p className="stock">{allproduct.stock}</p>
+            <br />
+            <p className="stock">{allproduct.stock ? "in stock" : "out of stock"  } </p>
             <button id="seeDetails">See Details</button>
           </div>
         ))}
