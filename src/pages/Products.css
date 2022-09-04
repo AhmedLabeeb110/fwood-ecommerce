@@ -1,6 +1,6 @@
-.products {
+/* .products {
   padding: 0px 50px 0px 100px;
-  /* border: 3px solid red; */
+  border: 3px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   margin: 20px 20px 20px 20px;
   background-color: #fafafa;
   padding: 50px 30px 50px 50px;
-  /* border: 3px solid red; */
+  border: 3px solid red;
 }
 
 .products img {
@@ -81,4 +81,8 @@
 
 .stock {
   font-weight: 500;
+} */
+
+.products{
+  display: flex;
 }
