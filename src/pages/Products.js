@@ -10,7 +10,7 @@ const Products = () => {
 
   return (
     <div className="container">
-      <div className="products ">
+      <div className="products">
         {data &&
           data.map((allproduct) => (
             <div className="product-card" key={allproduct.id}>
@@ -23,10 +23,10 @@ const Products = () => {
               <div className="productTitle">{allproduct.name}</div>
               <div className="productPrice">{allproduct.price}</div>
               <p className="productDescription">{allproduct.description}</p>
-              <br />
               <p className="stock">
                 {allproduct.stock ? "in stock" : "out of stock"}
               </p>
+              <br />
               <button id="seeDetails">See Details</button>
             </div>
           ))}
