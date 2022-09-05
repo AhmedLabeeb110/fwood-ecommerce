@@ -5,7 +5,7 @@ import { useFetch } from "../hooks/useFetch";
 const Products = () => {
   // api with objects
   const { data } = useFetch(
-    "https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/allproducts "
+    "https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/allproducts"
   );
 
   return (

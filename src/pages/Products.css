@@ -1,19 +1,20 @@
-.container{
+.container {
   width: 1170px;
   margin: auto;
 }
 
-
-.products{
+.products {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.product-card{
-  width: 33.33%;
-  padding: 10px;
+.product-card {
+  width: 22.22%;
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 24px;
+  margin-left: 24px;
 }
-.products img{
+.products img {
   width: 100%;
 }
-
