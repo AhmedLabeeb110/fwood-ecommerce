@@ -1,0 +1,19 @@
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.product-card{
+  width: 33.33%;
+  padding: 10px;
+}
+.products img{
+  width: 100%;
+}
+
