@@ -2,6 +2,9 @@ import { NavLink, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Contact from "../pages/Products";
 import Shop from "../pages/Contact";
+// Individual posts
+import Product from "./Product";
+
 
 import { BiSearchAlt2, BiHeart, BiCart } from "react-icons/bi";
 
@@ -42,6 +45,7 @@ const NavBar = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/allproducts/:id" element={<Product />} />
       </Routes>
     </div>
   );

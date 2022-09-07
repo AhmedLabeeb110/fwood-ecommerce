@@ -1,4 +1,5 @@
 import "./Products.css";
+import { Link } from "react-router-dom";
 
 import { useFetch } from "../hooks/useFetch";
 
@@ -27,7 +28,11 @@ const Products = () => {
                 {allproduct.stock ? "in stock" : "out of stock"}
               </p>
               <br />
-              <button id="seeDetails">See Details</button>
+              <Link to={`/allproducts/${allproduct.id}`}>
+              <button id="seeDetails">
+                 See Details
+              </button>
+              </Link>
             </div>
           ))}
       </div>
