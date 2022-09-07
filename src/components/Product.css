@@ -1,0 +1,31 @@
+.main-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em;
+}
+
+.product {
+  display: flex;
+  width: 60%;
+}
+
+.product-Image img {
+  border-radius: 0.6rem;
+}
+
+.product-Details {
+  padding-left: 2em;
+}
+
+.product-Name {
+  margin-top: 66px;
+}
+
+.product-stock {
+    margin-top: 66px;
+}
+.product-Price,
+.product-Description {
+  margin-top: 20px;
+}
