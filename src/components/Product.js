@@ -13,7 +13,7 @@ const Product = () => {
     "https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/allproducts/" + id;
   const { data: product } = useFetch(url);
 
-  const {items, addToCartPlus} = useContext(CartContext)
+  const {items, addToCartPlus, addToCartMinus} = useContext(CartContext)
 
   return (
     <div className="main-Container">
@@ -32,7 +32,7 @@ const Product = () => {
             <p className="product-Description">{product.description}</p>
             <AiFillPlusCircle onClick={() => addToCartPlus()} />
             <span>{items}</span>
-            <AiFillMinusCircle />
+            <AiFillMinusCircle onClick={() => addToCartMinus()}/>
             <br />
             {product.stock ? (
               <button>Add to cart</button>
