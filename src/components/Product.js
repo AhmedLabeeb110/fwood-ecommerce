@@ -13,7 +13,7 @@ const Product = () => {
     "https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/allproducts/" + id;
   const { data: product } = useFetch(url);
 
-  const {items, addToCartPlus, addToCartMinus} = useContext(CartContext)
+  const {items, addToCartPlus, addToCartMinus } = useContext(CartContext)
 
   return (
     <div className="main-Container">
