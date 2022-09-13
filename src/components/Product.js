@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+
 import { useContext, useEffect } from "react";
+
 import CartContext from "../Context/CartContext";
 
 import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
@@ -13,10 +15,12 @@ const Product = () => {
     "https://my-json-server.typicode.com/AhmedLabeeb110/fwood-ecommerce-db/allproducts/" + id;
   const { data: product } = useFetch(url);
 
+
   const {items, setItems, addToCartPlus, addToCartMinus, addToCart } = useContext(CartContext)
   useEffect(() =>{
     setItems({product: null, qty:0});
   },[setItems]);
+
   return (
     <div className="main-Container">
       {product && (
@@ -38,6 +42,7 @@ const Product = () => {
             <br />
             {product.stock ? (
               <button onClick={() => addToCart(product)}>Add to cart</button>
+
             ) : (
               <button disabled>Add to cart</button>
             )}

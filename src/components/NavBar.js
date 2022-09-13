@@ -37,7 +37,9 @@ const NavBar = () => {
             <BiHeart />
           </li>
           <li>
+
             <NavLink to="/cartcheckout"><BiCart /></NavLink>
+
           </li>
         </ul>
       </div>
