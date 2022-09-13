@@ -3,15 +3,16 @@ import { createContext, useState } from "react";
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [items, setItems] = useState(0);
+
+  const [items, setItems] = useState({product: null, qty:0});
   const [cart, setCart] = useState(null);
 
-  const addToCartPlus = () => {
-    setItems(items + 1);
+  const addToCartPlus = (product) => {
+    setItems({product:product, qty:items.qty + 1});
   };
-  const addToCartMinus = () => {
-    setItems(items - 1);
-    if (items === 0) {
+  const addToCartMinus = (product) => {
+    setItems({product:product, qty:items.qty - 1});
+    if (items.qty === 0) {
       setItems(0);
     }
   };
@@ -21,7 +22,8 @@ export function CartProvider({ children }) {
   };
   return (
     <CartContext.Provider
-      value={{ items, addToCartPlus, addToCartMinus, addToCart, cart }}
+
+      value={{ items, setItems, addToCartPlus, addToCartMinus, addToCart, cart }}
     >
       {children}
     </CartContext.Provider>
