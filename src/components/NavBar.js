@@ -4,6 +4,7 @@ import Contact from "../pages/Products";
 import Shop from "../pages/Contact";
 // Individual posts
 import Product from "./Product";
+import CartCheckout from "./CartCheckout";
 
 
 import { BiSearchAlt2, BiHeart, BiCart } from "react-icons/bi";
@@ -46,6 +47,7 @@ const NavBar = () => {
         <Route path="/products" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/allproducts/:id" element={<Product />} />
+        <Route path="/cartcheckout" element={<CartCheckout />} />
       </Routes>
     </div>
   );

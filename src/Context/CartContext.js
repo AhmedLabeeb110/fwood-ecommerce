@@ -4,6 +4,7 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [items, setItems] = useState(0);
+  const [cart, setCart] = useState(null);
 
   const addToCartPlus = () => {
     setItems(items + 1);
@@ -14,9 +15,13 @@ export function CartProvider({ children }) {
       setItems(0);
     }
   };
+
+  const addToCart = () => {
+    setCart(items);
+  };
   return (
     <CartContext.Provider
-      value={{ items, addToCartPlus, addToCartMinus}}
+      value={{ items, addToCartPlus, addToCartMinus, addToCart, cart }}
     >
       {children}
     </CartContext.Provider>
