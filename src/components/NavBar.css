@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  border: 1px solid #B9B9B9;
+}
+
+.navlinks,
+.navicons {
+  display: flex;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+.navlinks li,
+.navicons li {
+  margin-right: 25px;
+}
+
+.navicons{
+  font-size: 20px;
+  color: #3B3754;
+}
+
+.logo {
+  font-size: 26px;
+  color: #3B3754;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+a{
+  color: #3B3754;
+}
+
+a:hover{
+  color: #777777;
+}
